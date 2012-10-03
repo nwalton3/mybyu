@@ -1,0 +1,398 @@
+/*====================================*/
+/* Typography */
+/*====================================*/
+.up {
+    font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.up #portalLogo h1 {
+  border-bottom: none;
+  margin:0;
+  a {
+    color:#fff;
+  }
+}
+
+.up a:link, .up a:visited {
+    color: #001948;
+    text-decoration: none;
+}
+
+.up a:hover {
+    color: #8495A9;
+}
+
+.up .portal-pipe {
+    padding: 0 0.5em;
+}
+
+.up h1, .up h2, .up h3, .up h4, .up h5, .up h6 {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:600;
+}
+
+.up #portalLogin #portalCASLoginLink {
+    color: #f9fcfe;
+    font-size: 10px;
+    text-decoration: none;
+    background: #336699 url("images/light_top_10px_30.png") repeat-x left top;
+    border: 1px solid #628CB6;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 10px;
+}
+
+.up #portalLogin #portalCASLoginLink:hover, .up #portalLogin #portalCASLoginLink:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.up #portalLogin #portalCASLoginLink:hover {
+    background: #628cb6 url("images/light_top_10px_30.png") repeat-x right top;
+    border-color: #369;
+}
+
+.up #portalPageBar {
+    color: #ABC8E4;
+}
+
+.up #portalPageBar #portalPageBarLinks li {
+    list-style: none;
+}
+
+.up #portalPageBar #portalPageBarLinks li:last-child {
+    border-right: none;
+}
+
+.up #portalPageBar #portalPageBarLinks a {
+    color: #f9fcfe;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.up #portalPageBar #portalPageBarLinks a:hover, .up #portalPageBar #portalPageBarLinks a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.up #portalWelcome {
+    color: #abc8e4;
+}
+
+.up #portalWelcome a, .up #portalWelcome .user-name {
+    color: white;
+}
+
+.up #webSearchInput, .up #webSearchInput:focus,
+.up #webSearchSubmit,
+.up #webSearchSubmit:focus {
+    color: #444444;
+}
+
+.up #portalNavigation .portal-navigation-link {
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    background: transparent;
+}
+
+.up #portalNavigation .portal-flyout-container {
+    font-size: 85%;
+}
+
+.up #portalNavigation .portal-flyout-container a {
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+.up #portalNavigation .portal-navigation-add {
+    text-decoration: none;
+    padding: 2px 8px 2px 20px;
+    font-size: 86%;
+}
+
+.up #portalPageBodyBreadcrumb {
+    /* Breadcrumb */
+    color: #dcdcdc;
+}
+
+.up #portalPageBodyBreadcrumb a {
+    font-weight: normal;
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+.up #portalPageBodyBreadcrumb a:hover, .up #portalPageBodyBreadcrumb a:focus {
+    color: #8f8f8f;
+}
+
+.up #portalAdminLinks .fl-widget-titlebar h2 {
+    padding: 0;
+    color: #b2cce1;
+    font-size: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.7);
+}
+
+.up #portalAdminLinks .fl-widget-content .fl-listmenu {
+    background: #38678f;
+    border: 1px solid #38678f;
+}
+
+.up #portalAdminLinks .fl-widget-content .fl-listmenu a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.up #portalAdminLinks .fl-widget-content .fl-listmenu li {
+    border: 1px solid #38678f;
+}
+
+.up #portalAdminLinks .fl-widget-content .fl-listmenu li, .up #portalAdminLinks .fl-widget-content .fl-listmenu li a {
+    background: #38678f;
+    color: #b2cce1;
+}
+
+.up #portalAdminLinks .fl-widget-content .fl-listmenu li:hover, .up #portalAdminLinks .fl-widget-content .fl-listmenu li:focus, .up #portalAdminLinks .fl-widget-content .fl-listmenu li a:hover, .up #portalAdminLinks .fl-widget-content .fl-listmenu li a:focus {
+    background: #a85608;
+    color: white;
+}
+
+.up #portalAdminLinks .fl-widget-content .fl-listmenu .fl-activemenu .portal-subnav-list a {
+    background: #294d6b;
+    color: #8db3d3;
+}
+
+.up #portalAdminLinks .fl-widget-content .fl-listmenu .fl-activemenu .portal-subnav-list a:hover, .up #portalAdminLinks .fl-widget-content .fl-listmenu .fl-activemenu .portal-subnav-list a:focus {
+    background: #783d05;
+    color: white;
+}
+
+.up #portalPageFooter {
+    text-align: center;
+    color: #7E7B76;
+    background: url("../common/images/shadow_top_5px_15.png") repeat-x scroll 0 0 #f9fcfe;
+    padding-top: 0em;
+    line-height: 22px;
+}
+
+.up #portalPageFooter a {
+    color: #7E7B76;
+    text-decoration: none;
+    padding: 0 0 0 2px;
+}
+
+.up #portalPageFooter a:hover, .up #portalPageFooter a:focus {
+    color: #002255;
+    text-decoration: underline;
+}
+
+.up .ui-widget, .up .ui-widget input, .up .ui-widget form select, .up form .ui-widget select, .up .ui-widget select, .up .ui-widget textarea, .up .ui-widget button {
+    font-size: 1em;
+    font-family: arial, helvetica, clean, sans-serif;
+}
+
+.up .ui-widget .ui-tabs-nav a {
+    color: #444;
+}
+
+.up#portal {
+    background: #a9a9a9;
+    background-image: -moz-linear-gradient(top, #c3c3c3, #8f8f8f);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c3c3c3), color-stop(1, #8f8f8f));
+    background-image: linear-gradient(top, #c3c3c3, #8f8f8f);
+}
+
+.up #portalPageInner {
+    background: white;
+}
+
+.up #portalPageHeader {
+    background: #012257;
+}
+
+.up #portalPageHeader #portalPageBarLinks a {
+
+}
+
+.up #portalPageHeader #portalPageBarLinks a:hover {
+
+}
+
+.up #portalPageHeader #webSearchContainer #webSearchInput {
+    background: #f9fcfe url("images/form_input_shadow.gif") top left repeat-x;
+    border: 1px solid #2c3f60;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.up #portalNavigation .portal-navigation-link:hover, .up #portalNavigation .portal-navigation-link:focus {
+    background: #001948;
+    border: none;
+}
+
+.up #portalNavigation .portal-navigation:hover .portal-navigation-link,
+.up #portalNavigation .portal-navigation:focus .portal-navigation-link,
+.up #portalNavigation .active .portal-navigation-link {
+    background: #025;
+    border: none;
+}
+
+.up #portalNavigation .portal-navigation-gripper {
+    background: transparent url("images/gripper.png") 0 0 no-repeat;
+}
+
+.up #portalNavigation .portal-navigation-delete {
+    background: transparent url("images/remove.png") 0 0 no-repeat;
+}
+
+.up #portalNavigation .portal-flyout-container {
+    background: #282D33;
+    border: 4px solid #121416;
+    border-top-width: 1px;
+    -moz-box-shadow: 2px 4px 6px #767676;
+    -webkit-box-shadow: 2px 4px 6px #767676;
+    box-shadow: 2px 4px 6px #767676;
+}
+
+.up #portalNavigation .portal-flyout-container li {
+    border-top: 1px solid #282D33;
+    background-color: #eef6fc;
+}
+
+.up #portalNavigation .portal-flyout-container li a {
+    padding: 0.7em 2em;
+    background: url("images/bullet_blue.gif") no-repeat 5px 5px;
+    color: #121416;
+}
+
+.up #portalNavigation .portal-flyout-container li a:hover,
+.up #portalNavigation .portal-flyout-container li a:focus {
+    background-color: #E0EDF9;
+    background-image: url("images/bullet_orange.gif");
+}
+
+.up #portalNavigation a.portal-navigation-add {
+    background: url("images/add.png") no-repeat 5px 2px;
+    background-repeat: no-repeat;
+    border: 1px solid #3e4650;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: white;
+}
+
+.up #portalNavigation a.portal-navigation-add:hover, .up #portalNavigation a.portal-navigation-add:focus {
+    background-color: #336699;
+}
+
+.up .fl-reorderer-header-avatar {
+    display: inline;
+    position: relative;
+    padding: 5px 20px 5px 20px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #333333;
+    opacity: .7;
+}
+
+.up .fl-reorderer-header-avatar .portal-navigation-delete,
+.up .fl-reorderer-header-avatar .portal-navigation-gripper {
+    display: block;
+    position: absolute;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.up .fl-reorderer-header-avatar .portal-navigation-delete, .up .fl-reorderer-header-avatar .portal-navigation-delete span,
+.up .fl-reorderer-header-avatar .portal-navigation-gripper,
+.up .fl-reorderer-header-avatar .portal-navigation-gripper span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.up .fl-reorderer-header-avatar .portal-navigation-delete span,
+.up .fl-reorderer-header-avatar .portal-navigation-gripper span {
+    visibility: hidden;
+}
+
+.up .fl-reorderer-header-avatar .portal-navigation-link {
+    color: #222222 !important;
+    text-decoration: none;
+}
+
+.up .fl-reorderer-header-avatar .portal-flyout-container {
+    display: none !important;
+}
+
+.up .fl-reorderer-header-dropMarker {
+    display: block;
+    float: left;
+    background-color: white !important;
+    width: 2px;
+    height: 35px;
+    *display: inline !important;
+    *height: 10px;
+    *padding: 0 .13em !important;
+    *zoom: 1 !important;
+}
+
+.up #portalSidebar #portalAdminLinks {
+    border: 1px solid #121416;
+    background: #282d33 url("../common/images/light_top_100px_50.png") repeat-x;
+    background-image: -moz-linear-gradient(top, #6b7989, #282d33);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #6b7989), color-stop(1, #282d33));
+    background-image: linear-gradient(top, #6b7989, #282d33);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.up #portalSidebar .fl-widget-content {
+    background: #38678f;
+    color: #b2cce1;
+    border: 1px solid #282d33;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.up #portalPageFooter {
+    background: #f9fcfe url("images/shadow_top_5px_15.png") repeat-x 0 0;
+    padding: 1em;
+}
+
+.up form input, .up form select, .up form textarea {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+    padding: 0.1em 0.4em 0 0.4em;
+    -moz-border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+    border-radius: 0.6em;
+    line-height: 1.5;
+    border: 1px solid #a9a9a9;
+}
+
+.up form input:focus, .up form select:focus, .up form textarea:focus {
+    -moz-box-shadow: 0 0 10px #699bc4;
+    -webkit-box-shadow: 0 0 10px #699bc4;
+    box-shadow: 0 0 10px #699bc4;
+    outline: none;
+}
+
+.up form select {
+    padding: 0.1em;
+    -moz-border-radius: 0.2em;
+    -webkit-border-radius: 0.2em;
+    border-radius: 0.2em;
+}

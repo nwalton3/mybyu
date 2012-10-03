@@ -1,0 +1,156 @@
+/*====================================*/
+/* Specific Portlets */
+/*====================================*/
+/* Style definitions for structures and elements unique to a specific portlet. */
+/* CSyndFeed Channel - RSS */
+.news-items ul,
+.news-items li {
+    margin: 0;
+}
+
+.news-items li {
+    list-style: none;
+}
+
+.news-items .news-item-excerpt {
+    display: block;
+    padding-top: 0.3em;
+}
+
+.news-source p {
+    padding: 1em;
+}
+
+/* Groups Manager Channel */
+.groupmgr-entity,
+.groupmgr-group {
+    padding: 0.3em 1em;
+    margin-bottom: 0.5em;
+}
+
+.groupmgr-entity strong,
+.groupmgr-group strong {
+    padding-right: 1em;
+}
+
+.groupmgr-entity table {
+    margin: 1em 0;
+}
+
+.groupmgr-entity table th {
+    padding: 0.2em 1em;
+}
+
+.groupmgr-entity table td {
+    padding: 0.5em 1em;
+}
+
+.groupmgr-edit-group,
+.groupmgr-close-group,
+.groupmgr-done-editing,
+.groupmgr-delete-group {
+    padding-right: 1em;
+}
+
+.groupmgr-show-info,
+.groupmgr-hide-info,
+.groupmgr-remove-member {
+    padding-left: 1em;
+}
+
+.groupmgr-edit-group img,
+.groupmgr-close-group img,
+.groupmgr-show-info img,
+.groupmgr-done-editing img,
+.groupmgr-delete-group img,
+.groupmgr-remove-member img,
+.groupmgr-hide-info img {
+    padding-right: 0.3em;
+}
+
+.groupmgr-right-pane td label {
+    display: block;
+    text-align: right;
+}
+
+.groupmgr-right-pane input, .groupmgr-right-pane .up form select, .up form .groupmgr-right-pane select {
+    margin-right: 0.5em;
+}
+
+/* Permissions Portlet 
+ * Styles the ongoing information shown in the title bar * 
+ * */
+ul.permission_info {
+    padding: 0;
+    margin: 0;
+    clear: both;
+}
+
+ul.permission_info li {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0 15px 0 0;
+    border-right: 1px solid;
+}
+
+ul.permission_info li.last {
+    border-right: none;
+}
+
+.prm-mgr .permission-lookup {
+    margin: 1em 2em 2em 2em;
+}
+
+.prm-mgr .permission-lookup form {
+    margin: 0;
+    padding: 0.7em 1em;
+}
+
+.prm-mgr .permission-lookup form label,
+.prm-mgr .permission-lookup form input,
+.prm-mgr .permission-lookup .up form select, .up
+.prm-mgr .permission-lookup form select {
+    float: none;
+}
+
+.prm-mgr .permission-lookup form label,
+.prm-mgr .permission-lookup form input[type="text"],
+.prm-mgr .permission-lookup .up form select[type="text"], .up
+.prm-mgr .permission-lookup form select[type="text"],
+.prm-mgr .permission-lookup form span {
+    font-size: 150%;
+}
+
+.prm-mgr .permission-lookup form input[type="text"], .prm-mgr .permission-lookup .up form select[type="text"], .up .prm-mgr .permission-lookup form select[type="text"] {
+    padding: 1px 5px;
+}
+
+.prm-mgr.view-listperms .panel-list {
+    margin-top: 2em;
+}
+
+.prm-mgr.view-editperm #assignments,
+.prm-mgr.view-editperm #assignments ul {
+    margin: 0;
+}
+
+.prm-mgr.view-editperm #assignments li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.prm-mgr.view-editperm #assignments ul li {
+    padding-left: 16px;
+    position: relative;
+}
+
+.prm-mgr.view-editperm #assignments ul .assignment-wrapper {
+    display: block;
+    padding-left: 6px;
+}
+
+/* Portlet Manager */
+.preference-name {
+    vertical-align: top;
+}

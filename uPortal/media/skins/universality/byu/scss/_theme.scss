@@ -1,0 +1,36 @@
+/*
+ * Styles specific to this particular theme,
+ * based on the main BYU theme.
+ *
+ */
+
+// The page
+.up #portalPage {
+  min-width: auto;
+}
+
+// Page title
+.up #portalLogo h1 {
+  a {
+    //@include replace-text('portal_logo.png', 0, 0); 
+    } }
+
+// Header height and background
+.up #portalPageHeader {
+  height:78px;
+  background-color:$blue1;
+  
+}
+
+
+// Menu bar
+.up #portalNavigation #portalNavigationList {
+	background: #001948;
+}
+
+// Body background image
+.up #portalPageBodyInner {
+    background: url("images/body-linen.png") repeat scroll 0 0 transparent;
+}
+
+

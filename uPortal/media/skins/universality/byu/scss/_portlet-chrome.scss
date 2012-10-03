@@ -1,0 +1,182 @@
+/*====================================*/
+/* Portlet Chrome */
+/*====================================*/
+/*
+ * Styles for formatting the portlet chrome that wraps portlets.
+ */
+.up .up-portlet-wrapper {
+    padding: 0px;
+    margin-bottom: 1em;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.up .up-portlet-wrapper .up-portlet-wrapper-top,
+.up .up-portlet-wrapper .up-portlet-wrapper-bottom {
+    /* These extra containers are available for additional styling (like rounded corners with images).
+* This skin does not use them, so hide them from view. */
+    display: none;
+}
+
+.up .up-portlet-wrapper .up-portlet-titlebar {
+    /* Prevent portlet titles from wrapping. */
+    white-space: nowrap;
+    position: relative;
+    background-color: #E0EDF9;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    padding: 6px 10px 2px;
+    @include background(linear-gradient(top, #eff6fc, #E0EDF9));
+    border-bottom:1px solid #ddd;
+}
+
+.up .up-portlet-wrapper .up-portlet-titlebar h2 {
+    padding: 0 0 3px 0.5em;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.up .up-portlet-wrapper .up-portlet-titlebar h2 a {
+    text-decoration: none;
+    color: #001948;
+    font-weight: inherit;
+}
+
+.up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-controls {
+    position: absolute;
+    right: 0;
+    padding: 0 0.5em 0 0;
+}
+
+.up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-control {
+    font-size: 90%;
+    padding-right: 1em;
+    color: #F8FBFE;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .up-portlet-control .icon {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 16px;
+    background-image: url("../common/images/portlet_icons_flat.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .focus .icon {
+    background-position: -0px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .focus:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .focus:focus .icon {
+    background-position: -0px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .edit .icon {
+    background-position: -16px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .edit:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .edit:focus .icon {
+    background-position: -16px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .info .icon {
+    background-position: -32px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .info:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .info:focus .icon {
+    background-position: -32px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .help .icon {
+    background-position: -48px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .help:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .help:focus .icon {
+    background-position: -48px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .remove .icon {
+    background-position: -64px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .remove:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .remove:focus .icon {
+    background-position: -64px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .add .icon {
+    background-position: -80px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .add:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .add:focus .icon {
+    background-position: -80px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .permissions .icon {
+    background-position: -96px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .permissions:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .permissions:focus .icon {
+    background-position: -96px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .show-content .icon {
+    background-position: -112px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .show-content:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .show-content:focus .icon {
+    background-position: -112px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .hide-content .icon {
+    background-position: -128px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .hide-content:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .hide-content:focus .icon {
+    background-position: -128px -16px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .return .icon {
+    background-position: -144px 0px;
+}
+.up .up-portlet-wrapper .up-portlet-titlebar .return:hover .icon, .up .up-portlet-wrapper .up-portlet-titlebar .return:focus .icon {
+    background-position: -144px -16px;
+}
+
+.up .up-portlet-control.hide-content {
+	padding-top: 2px;
+}
+
+.up .up-portlet-wrapper .up-portlet-content-wrapper {
+    margin: 0;
+    padding: 1em;
+    background: #F9FCFE;
+}
+
+.up .up-portlet-wrapper.no-chrome, .up .up-portlet-wrapper.no-chrome .up-portlet-content-wrapper {
+    /* A portlet that has been flagged to have no chrome - "Just the content, please." */
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.up .up-portlet-wrapper.locked .up-portlet-titlebar h2 {
+    padding-left: 21px;
+    background: url("/ResourceServingWebapp/rs/tango/0.8.90/16x16/emblems/emblem-readonly.png") no-repeat;
+}
+
+.up .dashboard .up-portlet-controls {
+    top: 7px;
+    padding: 0 0.5em 0 0;
+}
+
+.up .dashboard .up-portlet-control {
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+.up .dashboard .up-portlet-control .label {
+    display: none;
+}
+
+.up .focused {
+    /* A portlet when in the focused view. */
+}
+
+.up .focused .up-portlet-controls .up-portlet-control {
+    display: inline-block;
+    margin-left: 1.5em;
+    text-decoration: none;
+}
+
+.up .focused .up-portlet-controls .icon {
+    margin-right: 3px;
+}
+
+.up .focused .up-portlet-controls .label {
+    float: left;
+}
