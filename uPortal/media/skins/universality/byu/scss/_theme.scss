@@ -4,10 +4,10 @@
  *
  */
 
-// The page
-.up #portalPage {
-  min-width: auto;
-}
+
+/*===========================*
+  Header
+ *===========================*/
 
 // Page title
 .up #portalLogo h1 {
@@ -22,11 +22,36 @@
   
 }
 
+// Hide some of the links at the top
+.up #portalPageHeader #portalPageBar #portalPageBarLinks {
+  .link-home, .link-sitemap {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+/*===========================*
+  Menu and Gallery
+ *===========================*/
 
 // Menu bar
 .up #portalNavigation #portalNavigationList {
 	background: #001948;
 }
+
+
+
+
+
+
+/*===========================*
+  Body
+ *===========================*/
 
 // Body background image
 .up #portalPageBodyInner {
@@ -34,3 +59,22 @@
 }
 
 
+
+
+
+
+
+/*===========================*
+  Page Resize
+ *===========================*/
+ 
+.up #portalPage {
+  min-width: auto;
+}
+
+
+@media all and (max-width:700px) {
+  .up #portalPageBodyColumns .portal-page-column {
+    float:none;   
+  }
+}
