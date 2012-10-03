@@ -7,7 +7,7 @@ sass_dir = "uPortal/media/skins/universality/byu/scss"
 images_dir = "uPortal/media/skins/universality/byu/images"
 javascripts_dir = "js"
 
-output_style = :compressed
+output_style = :condensed
 environment = :development
 
 relative_assets = true
