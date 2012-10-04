@@ -16,14 +16,14 @@
     font-weight: normal;
 }
 
+.fl-theme-mist h2 a, 
+.fl-theme-coal h2 a, 
+.fl-theme-hc h2 a, 
+.fl-theme-rust h2 a, 
+.fl-theme-slate h2 a,
 strong {
-	weight:600;
+    font-weight: 600;
 }
-
-a[title="BeSafe"] {
-  display:none;
-}
-
 
 .fl-theme-mist .fl-widget, .fl-theme-coal .fl-widget, .fl-theme-hc .fl-widget, .fl-theme-rust .fl-widget, .fl-theme-slate .fl-widget {
     -moz-border-radius: 10px;
@@ -180,6 +180,11 @@ a[title="BeSafe"] {
     border: none;
 }
 
+/* Redefine: mist theme. */
+.fl-theme-mist .fl-tabs li:hover {
+    background-color: transparent;
+}
+
 /* Redefine: coal theme. */
 .fl-theme-coal .fl-tabs {
     padding: 0 0 0 0;
@@ -199,7 +204,7 @@ a[title="BeSafe"] {
 }
 
 .fl-theme-coal .fl-tabs li:hover {
-    background-color: #333;
+    background-color: transparent;
 }
 
 .fl-theme-coal .fl-tabs li.fl-tabs-active,
@@ -838,8 +843,9 @@ a[title="BeSafe"] {
 }
 
 .up #portalNavigation {
-    border-top: 1px solid #466594;
+    border-top: 1px solid $blue4;
     position: relative;
+    @include box-shadow(0px 1px 7px rgba(0,0,0,0.75));
 }
 
 .up #portalNavigation #portalNavigationList {

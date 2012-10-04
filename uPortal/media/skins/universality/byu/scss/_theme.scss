@@ -9,20 +9,20 @@
   Header
  *===========================*/
 
-// Page title
+/* Page title */
 .up #portalLogo h1 {
   a {
     //@include replace-text('portal_logo.png', 0, 0); 
     } }
 
-// Header height and background
+/* Header height and background */
 .up #portalPageHeader {
   height:78px;
   background-color:$blue1;
   
 }
 
-// Hide some of the links at the top
+/* Hide some of the links at the top */
 .up #portalPageHeader #portalPageBar #portalPageBarLinks {
   .link-home, .link-sitemap {
     display: none;
@@ -39,7 +39,7 @@
   Menu and Gallery
  *===========================*/
 
-// Menu bar
+/* Menu bar */
 .up #portalNavigation #portalNavigationList {
 	background: #001948;
 }
@@ -53,13 +53,78 @@
   Body
  *===========================*/
 
-// Body background image
-.up #portalPageBodyInner {
-    background: url("images/body-linen.png") repeat scroll 0 0 transparent;
+/* Body background image */
+.up #portalPage {
+  background: url("images/body-linen.png") repeat scroll 0 0 transparent;
+}
+
+.up .up-gallery {
+  border:none;
+  background: none;
+  .menu {
+    background: none;
+  }
+  .gallery-inner {
+    border-bottom: 1px solid $blue0;
+    @include box-shadow(0px 1px 5px rgba(0,0,0,0.25));
+    padding-top:0;
+  }
+  .handle {
+    background:none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    clear: both;
+    a {
+      font-size: 11px;
+      margin-left: 0;
+      margin-right: 25px;
+      right: 0px;
+    }
+  }
 }
 
 
 
+
+
+
+
+/*===========================*
+  Portlets
+ *===========================*/
+ 
+/* Portlet header bar */
+.up .up-portlet-wrapper .up-portlet-titlebar {
+    background-color: $blue3;
+    @include background(linear-gradient(top, $blue4, $blue3));
+    border-bottom:1px solid #ddd;
+    h2 a {
+      color: $blue9;
+    }
+}
+
+.up .up-portlet-wrapper .up-portlet-content-wrapper {
+  padding:1em 2em 1.25em;
+}
+
+
+
+
+
+
+/*===========================*
+  Footer
+ *===========================*/
+a[title="BeSafe"] {
+  display:none;
+}
+
+.up #portalPageFooter {
+  background: transparent;
+}
 
 
 
@@ -76,4 +141,8 @@
   .up #portalPageBodyColumns .portal-page-column {
     float:none;   
   }
+  .up .up-portlet-wrapper .up-portlet-content-wrapper {
+    padding:1em;
+  }
+
 }
