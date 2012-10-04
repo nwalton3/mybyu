@@ -44,6 +44,8 @@ strong {
 .fl-theme-mist .fl-tabs li, .fl-theme-coal .fl-tabs li, .fl-theme-hc .fl-tabs li, .fl-theme-rust .fl-tabs li, .fl-theme-slate .fl-tabs li {
     *display: inline;
     *padding: 5px 20px 5px 20px;
+    background-color: transparent;
+    margin-right:1px;
 }
 
 /* Custom fl classes for use with the Sidebar. */
@@ -446,24 +448,23 @@ strong {
     background-image: linear-gradient(top, #294d6b, #4682b4);
 }
 
-.up #webSearchContainer input[type='submit'], .up #webSearchContainer form select[type='submit'], .up form #webSearchContainer select[type='submit'] {
-    padding: 4px 10px;
-    background: #336699 url("images/light_top_10px_30.png") repeat-x left top;
-    border: 1px solid #628cb6;
-    color: #f9fcfe;
-    font-size: 10px;
-    font-weight: normal;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    height: 22px;
-    text-shadow: none;
+
+.up #webSearchContainer {
+  position: relative;
 }
 
-.up #webSearchContainer input[type='submit']:hover, .up #webSearchContainer form select[type='submit']:hover, .up form #webSearchContainer select[type='submit']:hover {
-    color: white;
-    background: #628cb6 url("images/light_top_10px_30.png") repeat-x right top;
-    border-color: #369;
+.up #webSearchContainer input[type='submit'], 
+.up #webSearchContainer form select[type='submit'], 
+.up form #webSearchContainer select[type='submit'] {
+  @include replace-text('search.png');
+  opacity: 0.5;
+  width: 2.25em;
+  height:2.25em;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right:5px;
+  @include box-shadow(none);
 }
 
 .up #portalLogin #portalCASLogin a.button {
@@ -837,9 +838,13 @@ strong {
 }
 
 .up #portalPageHeader #webSearchContainer #webSearchInput {
-    margin-right: 5px;
-    padding: 1px 0 1px 5px;
-    width: 194px;
+    padding: .25em 1em;
+    width: 10em;
+}
+
+.up #portalPageHeader #webSearchContainer #webSearchInput:focus {
+    width: 15em;
+    background:#fff;
 }
 
 .up #portalNavigation {
@@ -960,7 +965,7 @@ strong {
 
 .up #portalPageBodyInner {
     padding: 2.5em 12px;
-    background: url("images/body-linen.png") repeat scroll 0 0 transparent;
+    background: transparent;
     overflow: hidden;
 }
 

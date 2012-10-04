@@ -12,14 +12,14 @@
 /* Page title */
 .up #portalLogo h1 {
   a {
-    //@include replace-text('portal_logo.png', 0, 0); 
-    } }
+    //@include replace-text('portal_logo.png', 0, 0);
+ } }
 
 /* Header height and background */
 .up #portalPageHeader {
   height:78px;
   background-color:$blue1;
-  
+  @include background(image-url("byu-header-bg.svg"));
 }
 
 /* Hide some of the links at the top */
@@ -29,8 +29,38 @@
   }
 }
 
+.link-logout a {
+  color: white;
+  display: block;
+  background: #628CB6;
+  background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#628CB6),color-stop(100%,#369));
+  background-image: -webkit-linear-gradient(top,#628CB6 0%,#369 100%);
+  background-image: -moz-linear-gradient(top,#628CB6 0%,#369 100%);
+  background-image: -o-linear-gradient(top,#628CB6 0%,#369 100%);
+  background-image: -ms-linear-gradient(top,#628CB6 0%,#369 100%);
+  background-image: linear-gradient(top,#628CB6 0%,#369 100%);
+  border-radius: 14px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset,0 1px 8px rgba(0, 0, 0, 0.2);
+  padding: 4px 28px;
+  float: left;
+  margin-right: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  border:none;
+  font-family: inherit;
+  line-height:1.25;
+}
 
-
+.link-logout a:hover {
+  background: #369;
+  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#369),color-stop(100%,#147));
+  background-image: -webkit-linear-gradient(top,#369 0,#147 100%);
+  background-image: -moz-linear-gradient(top,#369 0,#147 100%);
+  background-image: -o-linear-gradient(top,#369 0,#147 100%);
+  background-image: -ms-linear-gradient(top,#369 0,#147 100%);
+  background-image: linear-gradient(top,#369 0,#147 100%);
+}
 
 
 
@@ -42,6 +72,24 @@
 /* Menu bar */
 .up #portalNavigation #portalNavigationList {
 	background: #001948;
+	font-size: 14px;
+}
+
+.up #portalNavigation .portal-navigation-link {
+  margin-top:-2px;
+  @include border-radius(3px 3px 0 0);
+  color:$blue7;
+}
+
+.up #portalNavigation .portal-navigation:hover .portal-navigation-link,
+.up #portalNavigation .portal-navigation:focus .portal-navigation-link,
+.up #portalNavigation .active .portal-navigation-link {
+  @include background(linear-gradient(top, $blue4, $blue3));
+  color: #fff;
+}
+
+.fl-theme-mist .fl-tabs li.fl-tabs-active, .fl-theme-mist .fl-tabs li.fl-tabs-active:hover, .fl-theme-mist .fl-tabs li.fl-activeTab, .fl-theme-mist .fl-tabs li.fl-activeTab:hover {
+  background-color: transparent;
 }
 
 
@@ -58,6 +106,12 @@
   background: url("images/body-linen.png") repeat scroll 0 0 transparent;
 }
 
+/* Padding on content */
+.up #portalPageBodyInner {
+  padding: 2.5em 1.75em;
+}
+
+/* Gallery ('customize' bar) */
 .up .up-gallery {
   border:none;
   background: none;
@@ -82,6 +136,7 @@
       margin-left: 0;
       margin-right: 25px;
       right: 0px;
+      background-color: rgba(255,255,255,0.5);
     }
   }
 }
@@ -106,6 +161,7 @@
     }
 }
 
+/* Padding inside portlets */
 .up .up-portlet-wrapper .up-portlet-content-wrapper {
   padding:1em 2em 1.25em;
 }
@@ -143,6 +199,10 @@ a[title="BeSafe"] {
   }
   .up .up-portlet-wrapper .up-portlet-content-wrapper {
     padding:1em;
+  }
+  
+  .up #portalPageBodyInner {
+    padding: 2.5em 1em;
   }
 
 }

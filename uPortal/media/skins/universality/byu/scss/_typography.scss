@@ -227,11 +227,9 @@
 }
 
 .up #portalPageHeader #webSearchContainer #webSearchInput {
-    background: #f9fcfe url("images/form_input_shadow.gif") top left repeat-x;
-    border: 1px solid #2c3f60;
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid $blue0;
+  @include border-radius(15px);
 }
 
 .up #portalNavigation .portal-navigation-link:hover, .up #portalNavigation .portal-navigation-link:focus {
