@@ -3059,8 +3059,7 @@ ul.permission_info li.last {
 /* Header height and background */
 .up #portalPageHeader {
   height: 78px;
-  background-color: #002255;
-  background: url('images/byu-header-bg.svg?1347394012'); }
+  background: #002255 url('images/byu-header-bg.svg?1347394012'); }
 
 /* Top links */
 .up #portalPageHeader #portalPageBar #portalPageBarLinks a {
@@ -3091,7 +3090,7 @@ ul.permission_info li.last {
   font-size: 14px; }
 
 /* Log out button */
-.link-logout a {
+.link-logout a, .up .up-gallery .close-button a.button {
   position: relative;
   top: .25em;
   color: white;
@@ -3115,7 +3114,7 @@ ul.permission_info li.last {
   line-height: 1.5;
   font-weight: 600; }
 
-.link-logout a:hover {
+.link-logout a:hover, .up .up-gallery .close-button a.button:hover {
   color: #fff !important;
   background: #336699;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #336699), color-stop(100%, #114477));
@@ -3200,7 +3199,7 @@ ul.permission_info li.last {
 
 /* Padding on content */
 .up #portalPageBodyInner {
-  padding: 2.5em 1.75em; }
+  padding: 2.5em 1.75em 0; }
 
 /* Gallery ('customize' bar) */
 .up .up-gallery {
@@ -3255,7 +3254,10 @@ a[title="BeSafe"] {
   display: none; }
 
 .up #portalPageFooter {
-  background: transparent; }
+  background: transparent;
+  padding: 0 1em; }
+.up #portalPageFooter a {
+  margin: 0 .4em; }
 
 /*===========================*
   Page Resize
@@ -3263,6 +3265,7 @@ a[title="BeSafe"] {
 .up #portalPage {
   min-width: auto; }
 
+/* Under 700 px */
 @media all and (max-width: 700px) {
   .up #portalPageBodyColumns .portal-page-column {
     float: none; }
@@ -3272,6 +3275,7 @@ a[title="BeSafe"] {
 
   .up #portalPageBodyInner {
     padding: 2.5em 1em; } }
+/* Under 500 px */
 @media all and (max-width: 500px) {
   #portalNavigationInner {
     padding-right: 1em;
@@ -3290,4 +3294,7 @@ a[title="BeSafe"] {
 
   .up #portalPageHeader #portalPageBar #portalPageBarLinks a {
     font-size: 13px;
-    top: .75em; } }
+    top: .75em; }
+
+  .up #portalPageBodyInner {
+    padding-top: 1.5em; } }

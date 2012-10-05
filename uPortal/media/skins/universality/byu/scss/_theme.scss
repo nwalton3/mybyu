@@ -23,8 +23,7 @@
 /* Header height and background */
 .up #portalPageHeader {
   height:78px;
-  background-color:$blue1;
-  @include background(image-url("byu-header-bg.svg"));
+  @include background($blue1 image-url("byu-header-bg.svg"));
 }
 
 /* Top links */
@@ -65,7 +64,8 @@
 }
 
 /* Log out button */
-.link-logout a {
+.link-logout a,
+.up .up-gallery .close-button a.button {
   position: relative;
   top:.25em;
   color: white;
@@ -86,7 +86,8 @@
   font-weight: 600;
 }
 
-.link-logout a:hover {
+.link-logout a:hover,
+.up .up-gallery .close-button a.button:hover {
   color: #fff !important;
   background: $blue4;
   @include background(linear-gradient($blue4, $blue3));
@@ -183,7 +184,7 @@
 
 /* Padding on content */
 .up #portalPageBodyInner {
-  padding: 2.5em 1.75em;
+  padding: 2.5em 1.75em 0;
 }
 
 /* Gallery ('customize' bar) */
@@ -255,6 +256,10 @@ a[title="BeSafe"] {
 
 .up #portalPageFooter {
   background: transparent;
+  padding: 0 1em;
+  a {
+    margin: 0 .4em;
+  }
 }
 
 
@@ -267,6 +272,9 @@ a[title="BeSafe"] {
 .up #portalPage {
   min-width: auto;
 }
+
+
+/* Under 700 px */
 
 @media all and (max-width:700px) {
   .up #portalPageBodyColumns .portal-page-column {
@@ -282,6 +290,9 @@ a[title="BeSafe"] {
 
 }
 
+
+
+/* Under 500 px */
 
 @media all and (max-width:500px) {
   #portalNavigationInner {
@@ -306,6 +317,9 @@ a[title="BeSafe"] {
   .up #portalPageHeader #portalPageBar #portalPageBarLinks a {
     font-size: 13px;
     top:.75em;
+  }
+  .up #portalPageBodyInner {
+    padding-top: 1.5em;
   }
 }
 
