@@ -11,12 +11,16 @@
 
 /* Page title */
 .up #portalLogo h1 {
-  font-size: 2.25em;
+  font-size: 2.4em;
   position: relative;
-  top:.75em;
-  left:.5em;
+  top:.4em;
+  left:5%;
   a {
     font-family: 'Droid Serif', 'Chaparral Pro', Georgia, serif;
+    span {
+      color: $blue9;
+      font-style: italic;
+    }
   }
 }
 
